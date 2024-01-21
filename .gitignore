@@ -1,0 +1,54 @@
+# Arquivos de configuração do IDE
+.idea/
+.vscode/
+
+# Diretório de build do Dart
+build/
+
+# Arquivos de log do Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# Arquivos de configuração do usuário
+*.mojo_run
+*.mojodb
+.flutter_settings
+
+# Certificados de desenvolvimento do MacOS
+**/ios/Flutter/Generated.xcconfig
+
+# Arquivos de símbolos de depuração
+**/ios/*.dSYM/
+**/ios/*.dSYM.zip
+**/ios/*/Flutter.framework.dSYM/
+**/ios/*/Flutter.podspec
+
+# Arquivos de artefato do Xcode
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/.generated/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/flutter_export_environment.sh
+
+# Arquivos do Xcode para o Flutter
+**/ios/Flutter/ephemeral/
+
+# Arquivos de cobertura de código
+coverage/
+
+# Arquivos do Android relacionados ao IntelliJ
+**/android/.idea
+**/android/.gradle
+**/android/*.iml
+
+# Arquivos de log do Android
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# Outros arquivos desnecessários
+.DS_Store
+thumbs.db
