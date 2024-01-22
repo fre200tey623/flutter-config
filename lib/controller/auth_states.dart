@@ -23,6 +23,7 @@ class AuthState extends ChangeNotifier {
         "email": authEmailCtrl.text,
         "password": authPasswordCtrl.text,
       };
+      Navigator.pushNamed(context, "/");
 
       var response = await http.post(url, body: data);
 
