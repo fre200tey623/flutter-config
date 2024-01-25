@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/components/components.dart';
-import 'package:flutter_application_1/controller/auth_states.dart';
+import 'package:flutter_app/components/components.dart';
+import 'package:flutter_app/controller/auth_states.dart';
 import 'package:provider/provider.dart';
 
 class RecoverCodePage extends StatefulWidget {

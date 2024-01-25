@@ -19,7 +19,7 @@ class _InitialPageState extends State<InitialPage> {
   }
 
   List<Widget> listOfWidgets = [
-    const HomeWidget(),
+    const HomePage(),
     const BusinessWidget(),
     const SchoolWidget(),
   ];
@@ -42,28 +42,17 @@ class _InitialPageState extends State<InitialPage> {
     return Scaffold(
       body: SafeArea(child: listOfWidgets[currentIndex]),
       bottomNavigationBar: Container(
-        width: 5,
-        margin: const EdgeInsets.only(
-          bottom: 30,
-          left: 65,
-          right: 55,
-        ),
+        alignment: Alignment.center,
+        width: size.width,
         height: size.width * .155,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(.15),
-              blurRadius: 30,
-              offset: const Offset(0, 10),
-            ),
-          ],
-          borderRadius: BorderRadius.circular(50),
         ),
         child: ListView.builder(
           itemCount: menus.length,
           scrollDirection: Axis.horizontal,
-          padding: EdgeInsets.symmetric(horizontal: size.width * .024),
+          padding:
+              EdgeInsets.symmetric(horizontal: size.width * menus.length * .06),
           itemBuilder: (context, index) => InkWell(
             onTap: () => _onItemTapped(index),
             splashColor: Colors.transparent,

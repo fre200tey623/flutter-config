@@ -3,12 +3,14 @@ class User {
   final String name;
   final String email;
   final String role;
+  final String? firebaseToken;
 
   User(
       {required this.id,
       required this.name,
       required this.email,
-      required this.role});
+      required this.role,
+      this.firebaseToken});
 
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
@@ -16,6 +18,7 @@ class User {
       name: json['name'],
       email: json['email'],
       role: json['role'],
+      firebaseToken: json['firebaseToken'],
     );
   }
 
@@ -24,5 +27,6 @@ class User {
         'name': name,
         'email': email,
         'role': role,
+        'firebaseToken': firebaseToken,
       };
 }

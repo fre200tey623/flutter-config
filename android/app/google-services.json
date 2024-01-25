@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1080019564441",
+    "project_id": "friendly-magpie-410920",
+    "storage_bucket": "friendly-magpie-410920.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080019564441:android:3495bac4c1958129518508",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ87lk1oYK6eV-sp81VDGvcWhTb2vy3fo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

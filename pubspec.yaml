@@ -1,4 +1,4 @@
-name: flutter_application_1
+name: flutter_app
 description: "A new Flutter project."
 publish_to: "none"
 version: 0.1.0
@@ -7,16 +7,32 @@ environment:
   sdk: ">=3.2.4 <4.0.0"
 
 dependencies:
-  http: ^0.13.3
+  http: ^1.2.0
   shared_preferences: ^2.0.12
   flutter:
     sdk: flutter
   provider: ^6.1.1
+  firebase_core: ^2.24.2
+  firebase_messaging: ^14.7.10
+  flutter_local_notifications: ^16.3.2
+  permission_handler: ^11.2.0
+  flutter_native_splash: ^2.3.9
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/splash.png
+
+flutter_native_splash:
+  color: "#ffffff"
+  color_dark: "#f5f5f5"
+  image: assets/splash.png
+  android: true
+  ios: true
+  android_12:
+    image: assets/splash.png
